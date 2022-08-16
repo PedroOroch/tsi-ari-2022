@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="">
+        <div>
+            <input type="text" name="nome" id="nome" placeholder="Digite seu Nome">
+        </div>
+        <div>
+            <input type="email" name="email" id="email" placeholder="seuemail@exemplo.com">
+            <input type="url" name="link" id="link" placeholder="Coloque seu GitHub">
+        </div>
+        <div>
+            <input type="tel" name="tel" id="tel" placeholder="XX XXXXX-XXXX">
+        </div>
+        <div>
+            <div>
+                <h4>
+                    Endereço
+                </h4>
+            </div>
+            <div>
+                <label for="CEP">
+                    CEP
+                    <input name="CEP" id="CEP" required pattern="\d{5}-?\d{3}">
+                </label>
+                <label for="Estado">
+                    Estado
+                    <select name="estados" id="state">
+                        <option value="sp">São Paulo</option>
+                        <option value="mg">Minas Gerais</option>
+                        <option value="rj">Rio de Janeiro</option>
+                        <option value="es">Espírito Santo</option>
+                    </select>
+                </label>
+            </div>
+            <div>
+                <label for="Cidade">
+                    Cidade
+                    <select name="cidades" id="city">
+                        <option value="sp">São Paulo</option>
+                        <option value="bh">Belo Horizonte</option>
+                        <option value="rj">Rio de Janeiro</option>
+                        <option value="vt">Vitória</option>
+                    </select>
+                </label>
+                <label for="rua">
+                    Rua
+                    <input type="text" name="rua" id="rua" placeholder="Av. Nossa Senhora da PQP"> 
+                </label>
+            </div>
+            <div>
+                <label for="numEnd">
+                    Número
+                    <input type="number" name="numEnd" id="nEnd">
+                </label>
+                <label for="compl">
+                    Complemento
+                    <input type="number" name="compl" id="cpl">
+                </label>
+            </div>
+            <div>
+                <label for="bloco">
+                    Bloco
+                    <input type="number" name="bloco" id="blc">
+                </label>
+            </div>
+        </div>
+        <div>
+            <h4>
+                Perguntas
+            </h4>
+            <div>
+                <div>
+                    <label for="games">
+                        quais desses jogos você joga?
+                    </label>
+                </div>
+                <div>
+                    <select name="games" id="games">
+                        <option value="mvs">MULTIVERSUS</option>
+                        <option value="gta">GRAND THEFT AUTO</option>
+                        <option value="lol">LEAGUE OF LEGENDS</option>
+                        <option value="ds">DARK SOULS</option>
+                        <option value="cs">COUNTER STRIKE</option>
+                        <option value="nvm">Nenhuma das opções</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="cor">
+                        Qual é sua cor favorita?
+                    </label>
+                    <input list="cores" name="cor" id="cor">
+                    <datalist id="cores" placeholder="escolha uma das opções ou digite">
+                        <option value="Roxo"></option>
+                        <option value="Laranja"></option>
+                        <option value="Preto"></option>
+                        <option value="Azul"></option>
+                        <option value="Branco"></option>
+                    </datalist>
+
+
+                </div>
+            </div>
+        </div>
+
+    </form>
+</body>
+
+<script src="script.js"></script>
+
+</html>
