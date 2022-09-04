@@ -1,13 +1,19 @@
-let video = document.getElementById('vid');
+const VIDEO = document.getElementById('vid');
+const CURRENTTIME =
 
-function playVideo() {
-    video.play();
-}
+    function playVideo(secs) {
+        VIDEO.play();
+        VIDEO.currentTime = secs;
+    }
 
 function pauseVideo() {
-    video.pause();
+    VIDEO.pause();
 }
 
-function cTimeVideo(secs) {}
 
 console.log(cTimeVideo());
+
+VIDEO.addEventListener('timeupdate', function(e) {
+
+
+})
