@@ -1,0 +1,122 @@
+body {
+    text-align: center;
+    background-image: linear-gradient(180deg, rgba(0, 0, 3), rgba(0, 0, 5));
+    background-size: cover;
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+video {
+    margin-top: 10px;
+    border: 2px solid #00ffff;
+    border-radius: 10px;
+}
+
+#meter {
+    width: 800px;
+    height: 20px;
+    margin-top: 20px;
+}
+
+.container {
+    display: flex;
+    align-items: initial;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#play {
+    margin-right: 8px;
+    width: 50px;
+}
+
+#pause {
+    margin-left: 8px;
+    width: 50px;
+}
+
+#tempoText {
+    position: absolute;
+    color: white;
+    font-family: monospace;
+    font-size: 20px;
+}
+
+.tempo {
+    display: block;
+    width: 100px;
+    margin-left: auto;
+    margin-right: 28.5%;
+}
+
+
+/* para google chrome */
+
+meter::-webkit-meter-optimum-value {
+    background: #00bbbb;
+}
+
+
+/* para mozilla firefox */
+
+meter::-moz-meter-bar {
+    background: #00bbbb;
+}
+
+@media screen and (min-witdh: 200px) {
+    body {
+        text-align: center;
+        background-image: linear-gradient(180deg, rgba(0, 0, 3), rgba(0, 0, 5));
+        background-size: cover;
+        height: 100%;
+        margin: 0;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    video {
+        margin-top: 10px;
+        border: 2px solid #00ffff;
+        border-radius: 10px;
+    }
+    #meter {
+        width: 800px;
+        height: 20px;
+        margin-top: 20px;
+    }
+    .container {
+        display: flex;
+        align-items: initial;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    #play {
+        margin-right: 8px;
+        width: 50px;
+    }
+    #pause {
+        margin-left: 8px;
+        width: 50px;
+    }
+    #tempoText {
+        position: absolute;
+        color: white;
+        font-family: monospace;
+        font-size: 20px;
+    }
+    .tempo {
+        display: block;
+        width: 100px;
+        margin-left: auto;
+        margin-right: 28.5%;
+    }
+    /* para google chrome */
+    meter::-webkit-meter-optimum-value {
+        background: #00bbbb;
+    }
+    /* para mozilla firefox */
+    meter::-moz-meter-bar {
+        background: #00bbbb;
+    }
+}

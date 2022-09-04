@@ -18,19 +18,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Video Player</title>
+    <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
-    <video src="vid/soldierboy.mp4" id="vid"></video>
-    <div>
-        <meter value="" id="meter"></meter>
-    </div>
-    <div>
-        <button onclick="playVideo();">Play</button>
-        <button onclick="pauseVideo();">Pause</button>
-    </div>
-    <div id="tempoText">
+    <div id="degrade">
+        <video src="vid/soldierboy.mp4" id="vid"></video>
+        <div>
+            <meter value="" id="meter"></meter>
+            <div class="tempo">
+                <div id="tempoText"></div>
+            </div>
+        </div>
 
+        <div class="container">
+            <img src="img/play-solid-ciano.png" alt="" onclick="playVideo();" id="play">
+
+            <img src="img/pause-solid-ciano.png" alt="" onclick="pauseVideo();" id="pause">
+
+        </div>
     </div>
 </body>
 <script src="script.js"></script>

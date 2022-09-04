@@ -9,13 +9,13 @@ function playAudio() {
 
     if (checkplay) {
         MUSIC.pause();
-        BPLAY.setAttribute('src', 'img/OIP.jfif');
+        BPLAY.setAttribute('src', 'img/play-solid-ciano.png');
         checkplay = false;
     } else {
         MUSIC.play();
         MUSIC.loop = false;
 
-        BPLAY.setAttribute('src', 'img/pause.jfif');
+        BPLAY.setAttribute('src', 'img/pause-solid-ciano.png');
         checkplay = true;
     }
 
