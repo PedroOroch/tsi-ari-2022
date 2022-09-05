@@ -22,20 +22,28 @@
 </head>
 
 <body>
-    <div id="degrade">
-        <video src="vid/soldierboy.mp4" id="vid"></video>
-        <div>
-            <meter value="" id="meter"></meter>
-            <div class="tempo">
-                <div id="tempoText"></div>
+    <div class="container">
+        <video src="vid/Dragonball Z Budokai Tenkaichi 3 Opening_Intro【HD】.mp4" id="vid"></video>
+    </div>
+
+    <div id="container">
+        <meter value="" id="meter"></meter>
+        <div class="tempo">
+            <div id="tempoText"></div>
+        </div>
+        <div class="controls">
+            <div class="volume-panel">
+                <div class="input-div">
+                    <div class="volume-input-div">
+                        <input type="range" value="100" step="5">
+                        <div class="volume-progress"></div>
+                    </div>
+                </div>
             </div>
         </div>
 
         <div class="container">
-            <img src="img/play-solid-ciano.png" alt="" onclick="playVideo();" id="play">
-
-            <img src="img/pause-solid-ciano.png" alt="" onclick="pauseVideo();" id="pause">
-
+            <img src="img/play-solid-ciano.png" alt="" onclick="playPauseVideo();" id="play">
         </div>
     </div>
 </body>
