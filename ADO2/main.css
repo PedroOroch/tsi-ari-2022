@@ -1,4 +1,10 @@
-@import url(https://fonts.google.com/specimen/Oxanium);
+@font-face {
+    font-family: 'pokemon4';
+    src: url('fonts/pokemon4.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -6,6 +12,7 @@
 }
 
 body {
+    font-family: 'pokemon4', sans-serif;
     text-align: center;
     background-image: linear-gradient(to bottom, #6ab7f5, #fff);
     min-height: 100vh;
@@ -26,18 +33,20 @@ main {
 .pokeImg {
     position: absolute;
     left: 50%;
-    bottom: 55%;
+    bottom: 58%;
     transform: translate(-63%, 20%);
     height: 18%;
+    width: 20%;
+    height: 15%;
 }
 
 .pokeData {
     position: absolute;
     font-weight: 600;
     color: #aaa;
-    top: 50%;
+    top: 45%;
     right: 39%;
-    font-size: clamp(8px, 5vw, 25px);
+    font-size: clamp(8px, 5vw, 20px);
 }
 
 .pokeName {
@@ -60,4 +69,58 @@ main {
     color: #3a444d;
     font-size: clamp(8px, 5vw, 1rem);
     box-shadow: 0px 4px 10px #aaa;
+}
+
+.pokeBtns {
+    position: absolute;
+    width: 100%;
+    top: 64%;
+    right: 8%;
+}
+
+.btn-prev {
+    width: 15%;
+    border-radius: 20px;
+    background-color: #993333;
+    color: #fff;
+}
+
+.btn-next {
+    width: 15%;
+    border-radius: 20px;
+    background-color: #333399;
+    color: #fff;
+}
+
+.btn-prev:hover {
+    width: 15%;
+    border-radius: 20px;
+    background-color: #f33;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn-next:hover {
+    width: 15%;
+    border-radius: 20px;
+    background-color: #33f;
+    color: #fff;
+    cursor: pointer;
+}
+
+.button {
+    box-shadow: -1px 2px 0 #111;
+}
+
+.button:active {
+    box-shadow: inset -4px 4px 0 #222;
+}
+
+.pokeType {
+    width: 100%;
+    position: absolute;
+    top: 99%;
+    left: 4.5%;
+    color: #3a444d;
+    font-size: 60%;
 }

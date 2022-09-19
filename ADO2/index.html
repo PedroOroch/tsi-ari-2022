@@ -5,30 +5,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>POKÉDEX</title>
+
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicons/favicon-16x16.png">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="main.css">
+    <title>POKÉDEX</title>
 </head>
 
 <body>
     <main>
-        <img src="" alt="" class="pokeImg">
+        <img alt="" class="pokeImg">
         <h1 class="pokeData">
-            <span class="pokeNumber">6</span> -
-            <span class="pokeName">charizard</span>
+            <span class="pokeNumber"></span> -
+            <span class="pokeName"></span>
+            <span class="pokeType"></span>
         </h1>
 
         <img src="img/pokedex.png" alt="pokedex" class="pokedex">
+        <div class="pokeBtns">
+            <button class="button btn-prev">&lt;</button>
+            <button class="button btn-next">&gt;</button>
+        </div>
+
         <form class="pokeForm">
             <input type="search" id="" placeholder="Nome ou ID do Pokemon" class="pokeSearch" required>
+
         </form>
-        <div class="pokeBtns">
-            <button class="button btn-prev">Prev &lt;</button>
-            <button class="button btn-next">Next &gt;</button>
-        </div>
+
+
+
     </main>
 </body>
+<script src="script.js"></script>
 
 </html>
